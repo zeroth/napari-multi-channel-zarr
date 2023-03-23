@@ -2,20 +2,9 @@ name: napari-multi-channel-zarr
 display_name: Multi channle Zarr file creator
 contributions:
   commands:
-    - id: napari-multi-channel-zarr.make_qwidget
-      python_name: napari_multi_channel_zarr._widget:ExampleQWidget
-      title: Make example QWidget
-    - id: napari-multi-channel-zarr.make_magic_widget
-      python_name: napari_multi_channel_zarr._widget:example_magic_widget
-      title: Make example magic widget
-    - id: napari-multi-channel-zarr.make_func_widget
-      python_name: napari_multi_channel_zarr._widget:example_function_widget
-      title: Make example function widget
+    - id: napari-multi-channel-zarr.get_metadata
+      python_name: napari_multi_channel_zarr._widget:get_metadata
+      title: Generate Zarr
   widgets:
-    - command: napari-multi-channel-zarr.make_qwidget
-      display_name: Example QWidget
-    - command: napari-multi-channel-zarr.make_magic_widget
-      display_name: Example Magic Widget
-    - command: napari-multi-channel-zarr.make_func_widget
-      autogenerate: true
-      display_name: Example Function Widget
+    - command: napari-multi-channel-zarr.get_metadata
+      display_name: Generate Zarr
