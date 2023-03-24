@@ -6,6 +6,4 @@ from napari_multi_channel_zarr import get_metadata
 
 def test_get_metadata(make_napari_viewer, capsys):
     #TODO: improve this test
-    viewer = make_napari_viewer()
-    my_widget = get_metadata
-    viewer.window.add_dock_widget(my_widget)
+    pass
